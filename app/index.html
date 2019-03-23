@@ -4,9 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recipy | Find thousands of recipes </title>
+    <meta name="keywords" content="Food recipes, Recipes, Cook, Easy recipes">
+    <meta name="author" content="Lucian Pauna">
+    <meta name="description" content="You don't need to be a chef to cook like one. Find thousands of recipes and step by step cooking instructions">
+    <title>Recipy | Find over 1,000,000 recipes </title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <img src="assets/images/logo.png" alt="Logo" class="header__logo">
+
+            <form class="search">
+                <input type="search" class="search__field" placeholder="Search over 1,000,000 recipes...">
+                <button class="btn search__btn">
+                    <svg class="search__icon">
+                        <use href="assets/images/icons.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+
+            <div class="likes">
+                <div class="likes__field">
+                    <svg class="likes__icon">
+                        <use href="assets/images/icons.svg#icon-heart"></use>
+                    </svg>
+                </div>
+                <div class="likes__panel">
+                    <ul class="likes__list">
+                        <!-- Example of a "li" element that will be toggled depending on the "like" button -->
+                        <li>
+                            <a class="likes__link" href="#23456">
+                                <figure class="likes__fig">
+                                    <img src="assets/images/test-1.jpg" alt="Test">
+                                </figure>
+                                <div class="likes__data">
+                                    <h4 class="likes__name">Pasta with tomato ...</h4>
+                                    <p class="likes__author">The Pioneer Woman</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results">
+            <ul class="results__list">
+                <!-- Example of few "li" element that will be displayed as results after the "search" button is clicked -->
+                <li>
+                    <a class="results__link results__link--active" href="#23456">
+                        <figure class="result__fig">
+                            <img src="assets/images/test-1.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta with tomato ...</h4>
+                            <p class="results__author">The Pioneer Woman</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="results__link" href="#76767">
+                        <figure class="results__fig">
+                            <img src="assets/images/test-2.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Pasta Salad with ...</h4>
+                            <p class="results__author">Spicy Perspective</p>
+                        </div>
+                    </a>
+                </li>
     
+                <li>
+                    <a class="results__link" href="#85354">
+                        <figure class="results__fig">
+                            <img src="assets/images/test-3.jpg" alt="Test">
+                        </figure>
+                        <div class="results__data">
+                            <h4 class="results__name">Homemade Tomato ...</h4>
+                            <p class="results__author">All Recipes</p>
+                        </div>                        
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="results__pages">
+                <!-- Buttons that will be displayed only if the search will return more than 10 result -->
+                <button class="btn--inline results__btn--prev">
+                    <svg class="search__icon">
+                        <use href="assets/images/icons.svg#icon-triangle-left"></use>
+                    </svg>
+                </button>
+                <button class="btn--inline results__btn--next">
+                    <svg class="search__icon">
+                        <use href="assets/images/icons.svg#icon-triangle-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- RECIPE -->
+        <div class="recipe">
+            <!-- Example of a detailed recipe containing an image, name, author, ingredients, like button, add to shoplist button, url button -->
+            <figure class="recipe__fig">
+                <img src="assets/images/test-1.jpg" alt="Test" class="recipe__img">
+                <h1 class="recipe__name">
+                    <span>Pasta with tomato cream sauce</span>
+                </h1>
+            </figure>
+            <div class="recipe__details">
+                <div class="recipe__info">
+                    <svg class="recipe__info-icon">
+                        <use href="assets/images/icons.svg#icon-stopwatch"></use>
+                    </svg>
+                    <span class="recipe__info-data recipe__info-data--minutes">45</span>
+                    <span class="recipe__info-text"> minutes</span>
+                </div>
+                <div class="recipe__info">
+                    <svg class="recipe__info-icon">
+                        <use href="assets/images/icons.svg#icon-man"></use>
+                    </svg>
+                    <span class="recipe__info-data recipe__info-data--people">4</span>
+                    <span class="recipe__info-text"> servings</span>
+
+                    <div class="recipe__info-buttons">
+                        <button class="btn-tiny">
+                            <svg>
+                                <use href="assets/images/icons.svg#icon-circle-with-minus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-tiny">
+                            <svg>
+                                <use href="assets/images/icons.svg#icon-circle-with-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <button class="recipe__love">
+                    <svg>
+                        <use href="assets/images/icons.svg#icon-heart-outlined"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="recipe__ingredients">
+                <ul class="recipe__ingredients-list">
+                    <li class="recipe__item">
+                        <svg>
+                            <use href="assets/images/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe__count">1000</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit">g</span>
+                             pasta
+                        </div>
+                    </li>
+
+                    <li class="recipe__item">
+                        <svg class="recipe__icon">
+                            <use href="assets/images/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe__count">1</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit"></span>
+                            can of tomatoes, whole or crushed
+                        </div>
+                    </li>
+    
+    
+                    <li class="recipe__item">
+                        <svg class="recipe__icon">
+                            <use href="assets/images/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe__count">1</div>
+                        <div class="recipe__ingredient">
+                            <span class="recipe__unit"></span>
+                            can tuna packed in olive oil
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="btn-small recipe__btn">
+                    <svg class="search__icon">
+                        <use href="assets/images/icons.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span>Add to shopping list</span>
+                </button>
+            </div>
+
+            <div class="recipe__directions">
+                <h2 class="heading-2">How to cook it</h2>
+                <p class="recipe__directions-text">
+                    This recipe was carefully designed and tested by
+                    <span class="recipe__by">The Pioneer Woman</span>. Please check out directions at their website.
+                </p>
+                <a class="btn-small recipe__btn" href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/" target="_blank">
+                    <span>Directions</span>
+                    <svg class="search__icon">
+                        <use href="assets/images/icons.svg#icon-triangle-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- SHOPPING LIST -->
+        <div class="shopping">
+            <h2 class="heading-2">My Shopping List</h2>
+            
+            <ul class="shopping__list">
+                <!-- Example of a detailed shopping list item -->
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="500" step="100">
+                        <p>g</p>
+                    </div>
+                    <p class="shopping__description">Pasta</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg>
+                            <use href="assets/images/icons.svg#icon-circle-with-cross"></use>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="0.5" step="0.1">
+                        <p>cup</p>
+                    </div>
+                    <p class="shopping__description">Ricotta cheese</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg>
+                            <use href="assets/images/icons.svg#icon-circle-with-cross"></use>
+                        </svg>
+                    </button>
+                </li>
+    
+                <li class="shopping__item">
+                    <div class="shopping__count">
+                        <input type="number" value="3.5" step="0.1">
+                        <p>tbsp</p>
+                    </div>
+                    <p class="shopping__description">Toasted almond slices</p>
+                    <button class="shopping__delete btn-tiny">
+                        <svg>
+                            <use href="assets/images/icons.svg#icon-circle-with-cross"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- FOOTER-->
+        <div class="copyright">
+            &copy; by Lucian Pauna. Powered by
+            <a href="http://food2fork.com" target="_blank" class="link">Food2Fork.com</a>
+        </div>
+    </div>
 </body>
 </html>
