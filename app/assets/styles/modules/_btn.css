@@ -1,3 +1,26 @@
+.btn {
+    padding: 1.3rem 3rem;
+    font-size: 1.3rem;
+}
+
+.btn svg {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #FFF;
+}
+
+.btn-small, .btn-small:link, .btn-small:visited {
+    font-size: 1.3rem;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+}
+
+.btn-small svg, .btn-small:link svg, .btn-small:visited svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #FFF;
+}
+
 .btn, .btn-small, .btn-small:link, .btn-small:visited {
     background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
     border-radius: 10rem;
@@ -20,4 +43,70 @@
 
 .btn > *:first-child, .btn-small > *:first-child {
     margin-right: 1rem;
+}
+
+.btn-inline {
+    color: #F59A83;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #F9F5F3;
+    padding: .8rem 1.2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+}
+
+.btn-inline svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: currentColor;
+    margin: 0 .2rem;
+}
+
+.btn-inline span {
+    margin: 0 .4rem; 
+}
+
+.btn-inline:hover {
+    color: #F48982;
+    background-color: #F2EFEE;
+}
+
+.btn-inline:focus {
+    outline: none; 
+}
+
+.btn-tiny {
+    height: 2.25rem;
+    width: 2.25rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-tiny svg {
+    height: 100%;
+    width: 100%;
+    fill: #F59A83;
+    transition: all .2s;
+}
+
+.btn-tiny:focus {
+    outline: none;
+}
+
+.btn-tiny:hover {
+    fill: #F48982;
+    transform: translateY(-1px);
+}
+
+.btn-tiny:active svg {
+    fill: #F48982;
+    transform: translateY(0); 
+}
+
+.btn-tiny:not(:last-child) {
+    margin-right: .3rem; 
 }
