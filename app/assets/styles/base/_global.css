@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix:after {
@@ -7,6 +9,14 @@
     display: table;
     clear: both;
 }
+
+html {
+    font-size: 62.5%;
+    
+    @mixin atLarge {
+        font-size: 50%;
+    }
+ }
 
 body {
     font-family: 'Nunito Sans', sans-serif;

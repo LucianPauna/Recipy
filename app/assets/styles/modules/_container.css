@@ -5,12 +5,12 @@
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2rem 6rem .5rem rgba(101, 90, 86, .2);
-    /*display: grid;
+    display: grid;
     grid-template-rows: 10rem minmax(100rem, auto);
     grid-template-columns: 1.1fr 2fr 1.1fr;
-    grid-template-areas: "head head head" "list recipe shopping";*/
+    grid-template-areas: "head head head" "list recipe shopping";
 
-    @mixins atMedium {
+    @mixins atLarge {
         width: 100%;
         margin: 0;
         border-radius: 0;
