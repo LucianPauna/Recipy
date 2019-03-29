@@ -1,9 +1,16 @@
 .copyright {
-    color: #968B87;
+    grid-area: footer;
+    color: $mainGrey;
+    font-size: 1.3rem;
     text-align: center;
     margin: 1rem;
+    flex: 0 0 100%;
+}
+
+.copyright a {
+    font-weight: 700;
 }
 
 .link:link, .link:visited {
-    color: #968B87;
+    color: $mainGrey;
 }

@@ -38,7 +38,7 @@
 
 .results__name {
     font-size: 1.3rem;
-    color: #F59A83;
+    color: $mainOrange;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: .3rem;
@@ -46,7 +46,7 @@
 
 .results__author {
     font-size: 1.1rem;
-    color: #968B87;
+    color: $mainGrey;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -71,7 +71,7 @@
 
 .results__pages {
     margin-top: 3rem;
-    padding: .3rem;
+    padding: 0 3rem;
 }
 
 .results__btn--prev {

@@ -69,7 +69,7 @@
 .recipe__info-icon {
     height: 2rem;
     width: 2rem;
-    fill: #F59A83;
+    fill: $mainOrange;
     margin-right: 1rem;
 }
 
@@ -140,6 +140,48 @@
     margin-bottom: 3rem;
 }
 
+.recipe__ingredient {
+    padding-top: .2rem;
+}
+
 .recipe__item {
     display: flex;
+}
+
+.recipe__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: $mainOrange;
+    border: 1px solid $mainOrange;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+    margin-top: .1rem;
+}
+
+.recipe__count {
+    margin-right: .5rem;
+    flex: 0 0 auto;
+    padding-top: .3rem;
+}
+
+.recipe__directions {
+    padding: 4rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe__directions-text {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 3rem;
+    color: $mainGrey;
+}
+
+.recipe__by {
+    font-weight: 700;
 }
