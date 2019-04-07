@@ -813,7 +813,7 @@ body {
             transform: translateY(-2px);
 }
 
-.result__link--active {
+.results__link--active {
     background-color: #F9F5F3;
 }
 
