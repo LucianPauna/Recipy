@@ -12,11 +12,13 @@
 
 html {
     font-size: 62.5%;
-    
-    @mixin atLarge {
-        font-size: 50%;
-    }
  }
+
+ @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; 
+    } 
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;

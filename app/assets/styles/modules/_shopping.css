@@ -61,10 +61,9 @@
     right: 0;
     background-image: linear-gradient(to right, transparent 0%, #fff 40%, #fff 100%);
     width: 3.75rem;
-    padding-left: 2rem;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .shopping__item:hover .shopping__delete {

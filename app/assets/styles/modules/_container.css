@@ -9,10 +9,12 @@
     grid-template-rows: 10rem minmax(100rem, auto);
     grid-template-columns: 1.1fr 2fr 1.1fr;
     grid-template-areas: "head head head" "list recipe shopping" "footer footer footer";
+}
 
-    @mixins atLarge {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
+@media only screen and (max-width: 68.75em) {
+    .container {
+      width: 100%;
+      margin: 0;
+      border-radius: 0; 
+    } 
 }

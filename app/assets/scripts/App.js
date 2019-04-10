@@ -134,7 +134,7 @@ elements.shopping.addEventListener('click', e => {
     const id = e.target.closest('.shopping__item').dataset.itemid;
 
     // Handle the delete button
-    if (e.target.matches('.shopping__delete, shopping__delete *')) {
+    if (e.target.matches('.shopping__delete, .shopping__delete *')) {
         // Delete from state
         state.list.deleteItem(id);
 

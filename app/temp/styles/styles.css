@@ -365,12 +365,11 @@ html {
     font-size: 62.5%;
  }
 
-@media (max-width: 1200px) {
-
-html {
-        font-size: 50%
- }
-    }
+@media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; 
+    } 
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -394,12 +393,14 @@ body {
     grid-template-rows: 10rem minmax(100rem, auto);
     grid-template-columns: 1.1fr 2fr 1.1fr;
     grid-template-areas: "head head head" "list recipe shopping" "footer footer footer";
+}
 
-    @mixins atLarge {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
+@media only screen and (max-width: 68.75em) {
+    .container {
+      width: 100%;
+      margin: 0;
+      border-radius: 0; 
+    } 
 }
 
 .header {
@@ -1090,10 +1091,9 @@ body {
     right: 0;
     background-image: linear-gradient(to right, transparent 0%, #fff 40%, #fff 100%);
     width: 3.75rem;
-    padding-left: 2rem;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .shopping__item:hover .shopping__delete {
